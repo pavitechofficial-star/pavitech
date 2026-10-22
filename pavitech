@@ -1,0 +1,547 @@
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+#pavitech-site {
+  --navy: #062b59;
+  --blue: #0878e8;
+  --orange: #ff7900;
+  --light: #f4f8fd;
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #102c55;
+  line-height: 1.6;
+  margin: -8px;
+  background: #fff;
+  overflow: hidden;
+}
+#pavitech-site * { box-sizing: border-box; }
+#pavitech-site a { text-decoration: none; }
+#pavitech-site .topbar {
+  background: var(--navy);
+  color: #fff;
+  padding: 10px 5%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  font-size: 12px;
+}
+#pavitech-site .topbar a { color: white; }
+#pavitech-site .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 5%;
+  background: white;
+  flex-wrap: wrap;
+}
+#pavitech-site .brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--navy);
+}
+#pavitech-site .brand img {
+  width: 76px;
+  height: 76px;
+  object-fit: contain;
+}
+#pavitech-site .brand-name {
+  font-size: clamp(25px, 3vw, 39px);
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+#pavitech-site .brand-name span { color: var(--orange); }
+#pavitech-site .tagline {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+#pavitech-site .menu {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  flex-wrap: wrap;
+}
+#pavitech-site .menu a {
+  color: var(--navy);
+  font-size: 13px;
+  font-weight: 600;
+}
+#pavitech-site .menu a:hover { color: var(--orange); }
+#pavitech-site .btn {
+  display: inline-block;
+  background: var(--orange);
+  color: white !important;
+  padding: 12px 23px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 13px;
+  transition: .2s;
+}
+#pavitech-site .btn:hover {
+  background: var(--blue);
+  transform: translateY(-2px);
+}
+#pavitech-site .hero {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  align-items: center;
+  gap: 25px;
+  padding: 55px 5%;
+  color: white;
+  background: linear-gradient(115deg, #031b3b, #064b8e);
+  position: relative;
+}
+#pavitech-site .eyebrow {
+  color: #ffad42;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+#pavitech-site .hero h1 {
+  font-size: clamp(34px, 4.5vw, 59px);
+  line-height: 1.13;
+  margin: 15px 0;
+  color: white;
+}
+#pavitech-site .hero h1 span { color: #ff8b19; }
+#pavitech-site .hero p {
+  font-size: 15px;
+  color: #e1ecfa;
+  max-width: 550px;
+}
+#pavitech-site .hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
+}
+#pavitech-site .btn-outline {
+  display: inline-block;
+  padding: 10px 23px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+}
+#pavitech-site .hero-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid rgba(255,255,255,.25);
+}
+#pavitech-site .section {
+  padding: 45px 5%;
+}
+#pavitech-site .section-heading {
+  text-align: center;
+  margin-bottom: 28px;
+}
+#pavitech-site .section-heading h2 {
+  font-size: clamp(25px, 3vw, 35px);
+  margin: 0 0 7px;
+  color: var(--navy);
+}
+#pavitech-site .section-heading h2 span { color: var(--orange); }
+#pavitech-site .section-heading p {
+  color: #61748f;
+  font-size: 14px;
+  margin: 0;
+}
+#pavitech-site .service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+#pavitech-site .service-card {
+  padding: 27px 20px;
+  border: 1px solid #e2eaf4;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 5px 18px rgba(6,43,89,.05);
+  transition: .25s;
+}
+#pavitech-site .service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(6,43,89,.12);
+}
+#pavitech-site .service-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 27px;
+  background: var(--blue);
+}
+#pavitech-site .service-card:nth-child(2) .service-icon { background: #0caa75; }
+#pavitech-site .service-card:nth-child(3) .service-icon { background: var(--orange); }
+#pavitech-site .service-card:nth-child(4) .service-icon { background: #773de0; }
+#pavitech-site .service-card h3 { margin: 15px 0 7px; font-size: 17px; }
+#pavitech-site .service-card p {
+  color: #64758d;
+  font-size: 13px;
+  margin: 0 0 13px;
+}
+#pavitech-site .learn-link {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--blue);
+}
+#pavitech-site .domains {
+  background: var(--light);
+}
+#pavitech-site .domain-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+#pavitech-site .domain-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px 15px;
+  text-align: center;
+  border: 1px solid #e1e9f3;
+}
+#pavitech-site .domain-card img {
+  width: 100%;
+  height: 145px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+#pavitech-site .domain-card h3 {
+  margin: 15px 0 5px;
+  font-size: 17px;
+}
+#pavitech-site .domain-card p {
+  font-size: 12px;
+  color: #65758b;
+  margin: 0;
+}
+#pavitech-site .why {
+  background: var(--navy);
+  color: white;
+}
+#pavitech-site .why .section-heading h2 { color: white; }
+#pavitech-site .why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+#pavitech-site .why-item {
+  padding: 20px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 10px;
+}
+#pavitech-site .why-item strong {
+  display: block;
+  color: #ff9a28;
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+#pavitech-site .why-item p {
+  color: #dce7f7;
+  font-size: 12px;
+  margin: 0;
+}
+#pavitech-site .contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  align-items: center;
+  padding: 45px 5%;
+}
+#pavitech-site .contact-section h2 {
+  color: var(--navy);
+  font-size: 30px;
+  margin: 0 0 10px;
+}
+#pavitech-site .contact-section p { color: #61748f; font-size: 14px; }
+#pavitech-site .contact-box {
+  padding: 25px;
+  background: var(--light);
+  border-radius: 12px;
+}
+#pavitech-site .contact-box p { margin: 10px 0; }
+#pavitech-site .contact-box a {
+  color: var(--navy);
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+#pavitech-site .footer {
+  background: #031b3b;
+  color: white;
+  padding: 28px 5%;
+}
+#pavitech-site .footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#pavitech-site .footer p { font-size: 12px; color: #d4e1f3; margin: 5px 0; }
+#pavitech-site .footer a { color: white; }
+#pavitech-site .footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 12px;
+}
+#pavitech-site .copyright {
+  border-top: 1px solid #294565;
+  margin-top: 22px;
+  padding-top: 15px;
+  text-align: center;
+  color: #c9d7e9;
+  font-size: 11px;
+}
+@media(max-width:900px) {
+  #pavitech-site .hero { grid-template-columns: 1fr; }
+  #pavitech-site .hero-image { height: 300px; }
+  #pavitech-site .service-grid,
+  #pavitech-site .domain-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #pavitech-site .why-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media(max-width:600px) {
+  #pavitech-site .topbar { justify-content: center; text-align: center; }
+  #pavitech-site .navbar { justify-content: center; }
+  #pavitech-site .brand img { width: 55px; height: 55px; }
+  #pavitech-site .brand-name { font-size: 27px; }
+  #pavitech-site .menu { justify-content: center; gap: 12px 18px; }
+  #pavitech-site .menu a { font-size: 12px; }
+  #pavitech-site .hero { padding: 38px 6%; }
+  #pavitech-site .hero-image { height: 220px; }
+  #pavitech-site .section { padding: 35px 5%; }
+  #pavitech-site .service-grid,
+  #pavitech-site .domain-grid,
+  #pavitech-site .why-grid { grid-template-columns: 1fr; }
+  #pavitech-site .contact-section { grid-template-columns: 1fr; }
+}
+</style>
+
+<div id="pavitech-site">
+
+  <!--TOP CONTACT BAR-->
+  <div class="topbar">
+    <span>✉ <a href="mailto:pavitech.official@gmail.com">pavitech.official@gmail.com</a></span>
+    <span>☎ <a href="tel:+919498026155">+91 9498026155</a></span>
+    <span>⌖ Learn | Build | Innovate</span>
+  </div>
+
+  <!--HEADER-->
+  <header class="navbar">
+    <a class="brand" href="#pavitech-home">
+      <!--Replace the image URL with your hosted PAVITECH logo-->
+      <img alt="PAVITECH Logo" src="YOUR_PAVITECH_LOGO_IMAGE_URL" />
+      <div>
+        <div class="brand-name">PAVI<span>TECH</span></div>
+        <div class="tagline">LEARN | BUILD | INNOVATE</div>
+      </div>
+    </a>
+
+    <nav class="menu">
+      <a href="#pavitech-home">Home</a>
+      <a href="#pavitech-services">Services</a>
+      <a href="#pavitech-domains">Domains</a>
+      <a href="#pavitech-courses">Courses</a>
+      <a href="#pavitech-contact">Contact</a>
+    </nav>
+    <a class="btn" href="#pavitech-contact">Get Started →</a>
+  </header>
+
+  <!--HERO BANNER-->
+  <section class="hero" id="pavitech-home">
+    <div>
+      <div class="eyebrow">EMBEDDED SYSTEMS | IoT | ROBOTICS | PCB DESIGN</div>
+      <h1>Build Your Future with <span>PAVITECH</span></h1>
+      <p>
+        We offer expert-led seminars, workshops, hands-on training
+        and project development in Embedded Systems, IoT, Robotics
+        and PCB Design.
+      </p>
+      <p><strong>From Ideas to Real Projects.</strong></p>
+      <div class="hero-actions">
+        <a class="btn" href="#pavitech-courses">Explore Courses →</a>
+        <a class="btn-outline" href="#pavitech-contact">Contact Us</a>
+      </div>
+    </div>
+    <!--Replace with a suitable robotics/PCB banner image-->
+    <img alt="Technology and engineering workspace" class="hero-image" src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" />
+  </section>
+
+  <!--SERVICES-->
+  <section class="section" id="pavitech-services">
+    <div class="section-heading">
+      <h2>Our <span>Services</span></h2>
+      <p>Practical learning and technology solutions for tomorrow.</p>
+    </div>
+
+    <div class="service-grid">
+      <article class="service-card">
+        <div class="service-icon">▣</div>
+        <h3>Seminar</h3>
+        <p>Industry-oriented technical sessions led by experts.</p>
+        <a class="learn-link" href="#pavitech-contact">Enquire Now →</a>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">⚙</div>
+        <h3>Workshop</h3>
+        <p>Practical learning with guided activities and real projects.</p>
+        <a class="learn-link" href="#pavitech-contact">Enquire Now →</a>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">⌘</div>
+        <h3>Hands-on Training</h3>
+        <p>Learn to work with development boards, hardware and tools.</p>
+        <a class="learn-link" href="#pavitech-contact">Enquire Now →</a>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">&lt;/&gt;</div>
+        <h3>Project Development</h3>
+        <p>Turn your ideas into innovative engineering projects.</p>
+        <a class="learn-link" href="#pavitech-contact">Enquire Now →</a>
+      </article>
+    </div>
+  </section>
+
+  <!--TECHNOLOGY DOMAINS-->
+  <section class="section domains" id="pavitech-domains">
+    <div class="section-heading">
+      <h2>Our Technology <span>Domains</span></h2>
+      <p>Explore modern technologies and develop real-world skills.</p>
+    </div>
+
+    <div class="domain-grid" id="pavitech-courses">
+      <article class="domain-card">
+        <img alt="Embedded electronics circuit board" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=600&amp;q=80" />
+        <h3>Embedded Systems</h3>
+        <p>ESP32 · Arduino · ARM · Microcontrollers</p>
+        <p><a class="learn-link" href="#pavitech-contact">Learn More →</a></p>
+      </article>
+
+      <article class="domain-card">
+        <img alt="IoT and connected technology" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&amp;fit=crop&amp;w=600&amp;q=80" />
+        <h3>Internet of Things (IoT)</h3>
+        <p>Sensors · Cloud · MQTT · Smart Devices</p>
+        <p><a class="learn-link" href="#pavitech-contact">Learn More →</a></p>
+      </article>
+
+      <article class="domain-card">
+        <img alt="Robotics technology" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&amp;fit=crop&amp;w=600&amp;q=80" />
+        <h3>Robotics</h3>
+        <p>Mobile Robots · Automation · Sensors</p>
+        <p><a class="learn-link" href="#pavitech-contact">Learn More →</a></p>
+      </article>
+
+      <article class="domain-card">
+        <img alt="PCB electronics and engineering" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&amp;fit=crop&amp;w=600&amp;q=80" />
+        <h3>PCB Design</h3>
+        <p>Schematic · Layout · Fabrication</p>
+        <p><a class="learn-link" href="#pavitech-contact">Learn More →</a></p>
+      </article>
+    </div>
+  </section>
+
+  <!--WHY PAVITECH-->
+  <section class="section why">
+    <div class="section-heading">
+      <h2>Why Choose <span>PAVITECH?</span></h2>
+      <p>Learn by doing. Build with confidence.</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-item">
+        <strong>Expert Guidance</strong>
+        <p>Technical support throughout your learning journey.</p>
+      </div>
+      <div class="why-item">
+        <strong>Practical Learning</strong>
+        <p>Hands-on experience with hardware and software.</p>
+      </div>
+      <div class="why-item">
+        <strong>Project Support</strong>
+        <p>Guidance to develop and demonstrate your ideas.</p>
+      </div>
+      <div class="why-item">
+        <strong>Career Skills</strong>
+        <p>Build skills relevant to emerging technologies.</p>
+      </div>
+    </div>
+  </section>
+
+  <!--CONTACT-->
+  <section class="contact-section" id="pavitech-contact">
+    <div>
+      <div class="eyebrow">LET'S BUILD SOMETHING GREAT</div>
+      <h2>Have a Project Idea?</h2>
+      <p>
+        Looking for a seminar, workshop, hands-on training or
+        project development support? Contact PAVITECH to discuss
+        your requirements.
+      </p>
+      <a class="btn" href="https://wa.me/919498026155?text=Hello%20PAVITECH%2C%20I%20would%20like%20to%20know%20about%20your%20training%20and%20project%20services.">
+         Enquire on WhatsApp →
+      </a>
+    </div>
+
+    <div class="contact-box">
+      <h3>Contact PAVITECH</h3>
+      <p>☎ Phone: <a href="tel:+919498026155">+91 9498026155</a></p>
+      <p>✉ Email:
+        <a href="mailto:pavitech.official@gmail.com">
+          pavitech.official@gmail.com
+        </a>
+      </p>
+      <p>⌖ Location: Salem, Tamil Nadu</p>
+      <p>💡 Learn | Build | Innovate</p>
+    </div>
+  </section>
+
+  <!--FOOTER: NO SOCIAL MEDIA ICONS-->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <div class="brand-name" style="color: white;">
+          PAVI<span>TECH</span>
+        </div>
+        <p>From Ideas to Real Projects</p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#pavitech-home">Home</a>
+        <a href="#pavitech-services">Services</a>
+        <a href="#pavitech-domains">Domains</a>
+        <a href="#pavitech-contact">Contact</a>
+      </div>
+
+      <div>
+        <p><a href="tel:+919498026155">+91 9498026155</a></p>
+        <p><a href="mailto:pavitech.official@gmail.com">Email PAVITECH</a></p>
+      </div>
+    </div>
+
+    <div class="copyright">
+      © <span id="pavitech-year">2026</span> PAVITECH.
+      All rights reserved. | Learn • Build • Innovate
+    </div>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  var year = document.getElementById('pavitech-year');
+  if (year) year.textContent = new Date().getFullYear();
+})();
+</script>
